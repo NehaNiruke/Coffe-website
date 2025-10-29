@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot</title>
+    <!-- Lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: black;
+        }
+        .heading{
+            font-size: 2rem;
+            text-align: center;
+            font-family: "Lobster", sans-serif;
+            letter-spacing:1px;
+        }
+        section{
+            height: 100vh;
+            padding: 0 8rem 0 8rem;
+        }
+        .hot_beverages{
+            background-color: var(--bg-color);
+            color: white;
+        }
+        .hot_beverages-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            gap: 3rem;
+        }
+        .hot_beverages-container .hot_beverages-box{
+            position: relative;
+            border-radius: 2rem;
+            height: 300px;
+            border: 2px solid var(--main-color);
+            overflow: hidden;
+            display: flex;
+        }
+        .hot_beverages-box img{
+            width: 100%;
+            height: 100%; 
+            transition: 0.5s ease;
+            object-fit: cover;
+        }
+        .hot_beverages-box:hover img{
+            transform: scale(1.05);
+        }
+        .hot_beverages-box .hot_beverages-info{
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0.4rem;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .hot_beverages-box .hot_beverages-info:hover{
+            background: radial-gradient(rgba(0,0,0,0.4),#ebd3bc);
+            transform: scale(1.05);
+        }
+        .hot_beverages-info h4{
+            font-size: 2rem;
+            color: white;
+            font-weight: 800;
+        }
+        .hot_beverages-info button{
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+            font-weight: 600;
+            color: white;
+            background-color: #f2a655;
+            border-radius: 1rem;
+            border: 2px solid transparent;
+            padding: 5px;
+        }
+        .hot_beverages-info a{
+            font-size: 1.4rem;
+            margin: 0.1rem 0 0.1rem;
+            font-weight: 600;
+            color: white;
+            background-color: #e4b381;
+            border-radius: 4rem;
+            border: 2px solid transparent;
+            padding: 7px;
+            text-decoration: none;
+        }
+        .hot_beverages-info a:hover{
+    transform: scale(1.05);
+    background: black;
+    color: #e4b381;
+    border: 2px solid #e4b381;
+}
+    </style>
+</head>
+<body>
+        <section id="hot_beverages" class="hot_beverages">
+            <h2 class="heading">Hot Beverages</h2>
+            <div class="hot_beverages-container">
+                <div class="hot_beverages-box">
+                    <img src="./Hot/1.jpg" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Caffè Americano</h4>
+                        <button>Rs.278</button>
+                        <a href="./order.html">Order Now</a>  
+                    </div>
+                </div>
+    
+                <div class="hot_beverages-box">
+                    <img src="./Hot/2.avif" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Caffè Espresso</h4> 
+                        <button>Rs.325</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+    
+                <div class="hot_beverages-box">
+                    <img src="./Hot/3.webp" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Caffè Misto</h4> 
+                        <button>Rs.110</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="hot_beverages-box">
+                    <img src="./Hot/4.jpg" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Featured Dark Roast</h4>
+                        <button>Rs.349</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="hot_beverages-box">
+                    <img src="./Hot/5.webp" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Matcha Tea Latte</h4>
+                        <button>Rs.210</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="hot_beverages-box">
+                    <img src="./Hot/6.jpg" alt="">
+                    <div class="hot_beverages-info">
+                        <h4>Steamed Milk</h4> 
+                        <button>Rs.150</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+        </section>
+</body>
+</html>

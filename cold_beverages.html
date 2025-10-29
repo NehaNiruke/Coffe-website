@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold</title>
+    <!-- Lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: black;
+        }
+
+        .heading{
+            font-size: 2rem;
+            text-align: center;
+            font-family: "Lobster", sans-serif;
+            letter-spacing:1px;
+        }
+        section{
+            height: 100vh;
+            padding: 0 8rem 0 8rem;
+        }
+        .cold_beverages{
+            background-color: var(--bg-color);
+            color: white;
+        }
+        .cold_beverages-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            gap: 3rem;
+        }
+        .cold_beverages-container .cold_beverages-box{
+            position: relative;
+            border-radius: 2rem;
+            height: 300px;
+            border: 2px solid var(--main-color);
+            overflow: hidden;
+            display: flex;
+        }
+        .cold_beverages-box img{
+            width: 100%;
+            height: 100%; 
+            transition: 0.5s ease;
+            object-fit: cover;
+        }
+        .cold_beverages-box:hover img{
+            transform: scale(1.05);
+        }
+        .cold_beverages-box .cold_beverages-info{
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0.4rem;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .cold_beverages-box .cold_beverages-info:hover{
+            background: radial-gradient(rgba(0,0,0,0.4),
+            #ebd3bc);
+            transform: scale(1.05);
+        }
+        .cold_beverages-info h4{
+            font-size: 2rem;
+            color: white;
+            font-weight: 800;
+        }
+        .cold_beverages-info button{
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+            font-weight: 600;
+            color: white;
+            background-color: #f2a655;
+            border-radius: 1rem;
+            border: 2px solid transparent;
+            padding: 5px;
+        }
+        .cold_beverages-info a{
+            font-size: 1.4rem;
+            margin: 0.1rem 0 0.1rem;
+            font-weight: 600;
+            color: white;
+            background-color: #e4b381;
+            border-radius: 4rem;
+            border: 2px solid transparent;
+            padding: 7px;
+            text-decoration: none;
+        }
+        .cold_beverages-info a:hover{
+    transform: scale(1.05);
+    background: black;
+    color: #e4b381;
+    border: 2px solid #e4b381;
+}
+    </style>
+</head>
+<body>
+        <section id="cold_beverages" class="cold_beverages">
+            <h2 class="heading">Cold Beverages</h2>
+            <div class="cold_beverages-container">
+                <div class="cold_beverages-box">
+                    <img src="./cold/1.jpg" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Pistachio Cream Cold Brew</h4>
+                        <button>Rs.396</button> 
+                        <a href="./order.html">Order Now</a> 
+                    </div>
+                </div>
+    
+                <div class="cold_beverages-box">
+                    <img src="./cold/2.jpg" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Chocolate Cream Cold Brew</h4> 
+                        <button>Rs.400</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+    
+                <div class="cold_beverages-box">
+                    <img src="./cold/3.jpg" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Vanilla Sweet Cream Cold Brew</h4> 
+                        <button>Rs.390</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="cold_beverages-box">
+                    <img src="./cold/4.jpg" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Nitro Cold Brew</h4>
+                        <button>Rs.499</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="cold_beverages-box">
+                    <img src="./cold/5.webp" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Iced Caffè Americano</h4>
+                        <button>Rs.290</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="cold_beverages-box">
+                    <img src="./cold/6.jpg" alt="">
+                    <div class="cold_beverages-info">
+                        <h4>Iced Coffee</h4> 
+                        <button>Rs.135</button>
+                        <a href="./order.html">Order Now</a>
+                    </div>
+                </div>
+        </section>
+</body>
+</html>
